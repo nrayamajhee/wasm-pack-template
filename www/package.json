@@ -1,0 +1,40 @@
+{
+  "name": "wasm-app",
+  "version": "0.1.0",
+  "description": "Create an app to expose wasm-bindgen entrypoint and establish rust as the preferred language for development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nrayamajhee/wasm-pack-template.git"
+  },
+  "keywords": [
+    "webassembly",
+    "wasm",
+    "rust",
+    "wasm-bindgen",
+    "web-sys",
+    "webpack"
+  ],
+  "author": "Nishan Rayamajhee",
+  "license": "(MIT OR Apache-2.0)",
+  "bugs": {
+    "url": "https://github.com/nrayamajhee/wasm-pack-template/issues"
+  },
+  "homepage": "https://github.com/nrayamajhee/wasm-pack-template#readme",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server"
+  },
+  "dependencies": {
+    "wasm-app": "file:../pkg"
+  },
+  "devDependencies": {
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "copy-webpack-plugin": "^5.0.0"
+  }
+}
