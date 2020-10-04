@@ -1,5 +1,6 @@
-use wasm_bindgen::wasm_bindgen;
 mod start;
+use wasm_bindgen::prelude::*;
+use wasm_bindgen::JsValue;
 
 // When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
 // allocator.
