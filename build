@@ -12,7 +12,7 @@ case $1 in
 		python3 server.py
 	;;
 	"w" | "watch")
-		cargo watch -w graph -w src -w Cargo.toml -s "$0 build"
+		cargo watch -w src -w Cargo.toml -s "$0 build"
 	;;
 	"d" | "document")
 		D_PRIVATE="--document-private-items"

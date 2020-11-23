@@ -6,10 +6,10 @@
   </head>
   <body>
     <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
-	<script src="frontend/pkg/{{project-name}}.js"></script>
+	<script src="pkg/{{project-name}}.js"></script>
 	<script>
 		(async () =>{
-			let wasm = await wasm_bindgen('frontend/pkg/{{project-name}}_bg.wasm');
+			let wasm = await wasm_bindgen('pkg/{{project-name}}_bg.wasm');
 			wasm.run();
 		})();
 	</script>
