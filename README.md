@@ -21,8 +21,7 @@
 
 [**📚 Read this template tutorial! 📚**][template-docs]
 
-This template is designed for compiling Rust libraries into WebAssembly and
-publishing the resulting package to NPM.
+This template is designed for compiling Rust libraries into WebAssembly with web worker support. As a result `--target no-modules` must be used, making `wasm-pack` impossible (maybe not...? I don't know). Please consider going through this page from the wasm-bindgen docs: <https://rustwasm.github.io/docs/wasm-bindgen/examples/raytrace.html#caveats>. Also please install wasm-bindgen-cli in your system for the build script to work.
 
 Be sure to check out [other `wasm-pack` tutorials online][tutorials] for other
 templates and usages of `wasm-pack`.
@@ -41,11 +40,21 @@ cargo generate --git https://github.com/rustwasm/wasm-pack-template.git --name m
 cd my-project
 ```
 
-### 🛠️ Build with `wasm-pack build`
+### 🛠️ Build and serve:
 
 ```
-wasm-pack build
+./build build
+./build serve
 ```
+
+
+### 🛠️ Generate documentation with:
+
+```
+./build docs
+```
+
+This runs `cargo doc --document-private-items --open` for you. You can also use `-pq` to only document public items and prevent browser opening the docs every time. Or you could just do `cargo docs` instead.
 
 ### 🔬 Test in Headless Browsers with `wasm-pack test`
 
