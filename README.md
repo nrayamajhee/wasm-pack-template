@@ -48,7 +48,7 @@ cd my-project
 ```
 
 
-### 🛠️ Generate documentation with:
+### 📖 Generate documentation with:
 
 ```
 ./build docs
@@ -62,12 +62,6 @@ This runs `cargo doc --document-private-items --open` for you. You can also use 
 wasm-pack test --headless --firefox
 ```
 
-### 🎁 Publish to NPM with `wasm-pack publish`
-
-```
-wasm-pack publish
-```
-
 ## 🔋 Batteries Included
 
 * [`wasm-bindgen`](https://github.com/rustwasm/wasm-bindgen) for communicating
@@ -76,3 +70,5 @@ wasm-pack publish
   for logging panic messages to the developer console.
 * [`wee_alloc`](https://github.com/rustwasm/wee_alloc), an allocator optimized
   for small code size.
+* [`rayon`](https://github.com/rayon-rs/rayon), a data-parallelism library.
+
